@@ -1,8 +1,6 @@
-# generate a similarity score
-# for all ints in col1 count matching instances in col2
-# multiply the col1 one value by the number of found instances in col2
-# sum the calculated vales
-from loader import loadFile
+# https://adventofcode.com/2024/day/1
+
+from loader import getSortedInputs
 
 def instance_count(target_val, list):
   found_count = 0
@@ -13,7 +11,7 @@ def instance_count(target_val, list):
 
 def main():
   similarity_total = 0
-  [col1, col2] = loadFile()
+  [col1, col2] = getSortedInputs()
 
   for i in range(len(col1)):
     count = instance_count(col1[i], col2)

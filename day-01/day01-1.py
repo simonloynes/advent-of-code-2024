@@ -1,7 +1,8 @@
-from loader import loadFile
+# https://adventofcode.com/2024/day/1
+from loader import getSortedInputs
 
 def main():
-  [col1, col2] = loadFile()
+  [col1, col2] = getSortedInputs()
   distance_total = 0
   for i in range(len(col1)):
     greater = 0

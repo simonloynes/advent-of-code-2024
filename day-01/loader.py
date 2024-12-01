@@ -1,6 +1,6 @@
 import array as arr
 
-def loadFile():
+def getSortedInputs():
     file = open("./input.txt", "r")
     col1 = arr.array('i', [])
     col2 = arr.array('i', [])
